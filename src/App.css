@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  font-family: Verdana;
+}
+html, body {
+ overflow-y: scroll; 
+ height:99.8%
+
+}
+p{
+	margin: 0 0 1px;
+}
+.dvDetalhe{
+	max-height:700px;
+	overflow-y: scroll; 
+	
+}
+.dvProjeto{
+	background-color: #1E90FF;
+	color: #F0FFFF;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	max-height:700px;
+	overflow-y: scroll;
+}
+@media screen and (min-width: 480px){
+	html,body {
+	  overflow: hidden;
+	  height:99.8%
+	}
+	.dvDetalhe{
+		max-height:700px;
+		overflow-y: scroll; 
+		background:white;
+	}
+	.dvProjeto{
+		background-color: #1E90FF;
+		color: #F0FFFF;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+		max-height:700px;
+		overflow-y: scroll; 
+	}
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.dvProjeto ul > li > a{
+	color:#F0FFFF;
+}
+.selecionado > a{
+	color:#1E90FF !important
+}
+.selecionado{
+	background-color:white;
+	
+}
+.avatar{
+	width:80px;
+	height:80px;
+	border-radius: 10px;
+    border: 3px solid #BADA55;
+}
+.userInfo{
+	text-align:left;
+	margin-bottom: 30px;
+}
+.cabecalho{
+	margin-bottom: 5px;
+}
+.dvCommit h4{
+	text-align:left;
+}
+.dvCommit li{
+	margin:4px;
+	padding: 8px;
+	border-radius: 4px;
+	border:  1px solid rgba(169,169,169,.5);
+	height:180px
+	
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.33;
+  border-radius: 35px;
+  margin-left: 70%;
+  position: relative;
+  margin-top: -180px;
+  z-index:9999;
+  box-shadow: 0px 2px 5px #666;
+}
+.btn-det{
+	background-color: #1E90FF;
+	display:block;
+}
+.msg{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	max-height: 38px;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
