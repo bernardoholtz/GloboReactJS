@@ -6,7 +6,6 @@ const url2 = 'https://api.github.com/users/globocom/repos?page=2&per_page=250&ac
 const url3 = 'https://api.github.com/users/globocom/repos?page=3&per_page=250&access_token=6d45d159e41a4c7e5702ef39eca20bb108303b33';
 const urlDet = 'https://api.github.com/repos/globocom/' ;
 var page = 0;
-var totalCommit =0;
 var repoName;
 class GitHub extends Component {
   constructor(props) {
