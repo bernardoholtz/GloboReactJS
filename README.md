@@ -12,9 +12,8 @@ cd GloboReactJS
 
 3)Instalar dependências
 
-npm install react-scripts
+npm install 
 
-npm install jquery
 
 3)Executar aplicação
 

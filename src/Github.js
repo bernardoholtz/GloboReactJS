@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-const url = 'https://api.github.com/users/globocom/repos?page=1&per_page=250&access_token=6d45d159e41a4c7e5702ef39eca20bb108303b33';
-const url2 = 'https://api.github.com/users/globocom/repos?page=2&per_page=250&access_token=6d45d159e41a4c7e5702ef39eca20bb108303b33';
-const url3 = 'https://api.github.com/users/globocom/repos?page=3&per_page=250&access_token=6d45d159e41a4c7e5702ef39eca20bb108303b33';
+const url = 'https://api.github.com/users/globocom/repos?page=1&per_page=250&access_token=defd1a969d0872d02c0a38283525a0dfebedc618';
+const url2 = 'https://api.github.com/users/globocom/repos?page=2&per_page=250&access_token=defd1a969d0872d02c0a38283525a0dfebedc618';
+const url3 = 'https://api.github.com/users/globocom/repos?page=3&per_page=250&access_token=defd1a969d0872d02c0a38283525a0dfebedc618';
 const urlDet = 'https://api.github.com/repos/globocom/' ;
 var page = 0;
 var repoName;
@@ -123,7 +123,7 @@ class GitHub extends Component {
 
 	function mostrarDetalhes(param){
 	 repoName = param;
-	 fetch(urlDet + param + '?&access_token=6d45d159e41a4c7e5702ef39eca20bb108303b33')
+	 fetch(urlDet + param + '?&access_token=defd1a969d0872d02c0a38283525a0dfebedc618')
       .then(response => {
         if (!response.ok) {
           throw Error("Falha de conexão")
@@ -176,7 +176,7 @@ class GitHub extends Component {
 		var itens = [];
 		 $.ajax({
 				 type: "GET",
-				 url : 'https://api.github.com/repos/globocom/' + param +'/commits?page=' + page +'&per_page=20&access_token=6d45d159e41a4c7e5702ef39eca20bb108303b33',
+				 url : 'https://api.github.com/repos/globocom/' + param +'/commits?page=' + page +'&per_page=20&access_token=defd1a969d0872d02c0a38283525a0dfebedc618',
 				 crossDomain: true,
 				 cache: false,
 				 success: function(data){
